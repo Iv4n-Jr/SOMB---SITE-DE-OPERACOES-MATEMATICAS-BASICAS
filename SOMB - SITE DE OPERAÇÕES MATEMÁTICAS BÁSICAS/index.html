@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>SOMB</h1><br>
+    <strong>S</strong>ite de <strong>O</strong>perações <strong>M</strong>atemáticas <strong>B</strong>ásicas
+</header>
+<body>
+    <div class="explicacao">Nesta página, você poderá realizar operações de matemática básicas entre dois números, sendo elas: Soma, Subtração, Multiplicação e Divisão.<br>
+    Digite dois números:</div>
+    <form>
+        <input class="caixa" id="n1" type="text"><br>
+        <input class="caixa" id="n2" type="text"><br>
+        <input class="botao" id="calcular_botao" type="button" value="Calcular!" onclick="calculo()">
+    </form>
+    <script>
+        function calculo() {
+            var n1 = parseFloat(document.getElementById("n1").value)
+            var n2 = parseFloat(document.getElementById("n2").value)
+            var soma = n1 + n2;
+            var subt = n1 - n2;
+            var mult = n1 * n2;
+            var div = n1 / n2;
+
+            if (isNaN(n1) || isNaN(n2)) {
+                window.alert("Por favor, insira números válidos.");
+                return;
+            }
+            if (n2 === 0) {
+                window.alert("Divisão por zero não é permitida.");
+                return;
+            }
+
+            window.alert(`${n1} + ${n2} = ${soma}`);
+            window.alert(`${n1} - ${n2} = ${subt}`);
+            window.alert(`${n1} x ${n2} = ${mult}`);
+            window.alert(`${n1} / ${n2} = ${div.toFixed(2)}`);
+        }
+    </script>
+</body>
+<footer>
+    <p>Desenvolvido por: <strong>Ivan</strong></p>
+    <p>Data: 22/04/2025</p>
+</footer>
+</html>

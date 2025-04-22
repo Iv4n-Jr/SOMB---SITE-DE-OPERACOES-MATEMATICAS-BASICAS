@@ -1,0 +1,74 @@
+header{
+    background-color: white;
+    color: black;
+    font: normal 25pt Impact;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30pt;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-bottom: 50px;
+
+}
+
+h1{
+    font-family: normal 00pt Impact;
+}
+
+body{
+    background-color: rgb(85, 214, 85);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font: Impact;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.explicacao{
+    font-style: italic;
+    font-size: 20pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.botao{
+    background: linear-gradient(to right, #afafaf, #505050);
+    color: white;
+    font-size: 20pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: 0 auto;
+    display: block;
+    align-content: center;
+}
+
+.caixa{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 80%;
+    max-width: 600px;
+}
